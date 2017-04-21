@@ -1,0 +1,17 @@
+tile.basicblock.name=Red Diamond Ore
+item.basicitem.name=Red Diamond
+item.emerald_sword.name=Emerald Sword
+item.emerald_hoe.name=Emerald Hoe
+item.emerald_spade.name=Emerald Shovel
+item.emerald_pickaxe.name=Emerald Pickaxe
+item.emerald_axe.name=Emerald Axe
+item.emerald_helmet.name=Emerald Helmet
+item.emerald_chestplate.name=Emerald Chestplate
+item.emerald_leggings.name=Emerald Leggings
+item.emerald_boots.name=Emerald Boots
+itemGroup.block_tab=Random Blocks
+itemGroup.item_tab=Gem Items
+itemGroup.tool_tab=Gem Tools
+itemGroup.weapon_tab=Gem Weapons
+item.hackers_axe.name=Hacker's Axe
+item.hackers_sword.name=Hacker's Sword

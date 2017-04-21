@@ -1,0 +1,17 @@
+[
+{
+  "modid": "ultimategems",
+  "name": "Ultimate Gems Mod",
+  "description": "This mod adds many new gems, blocks, mobs, and items to the game, some of which have unique abilities. \
+  Currently, this mod only makes emeralds more useful.",
+  "version": "0.0.1a",
+  "mcversion": "${mcversion}",
+  "url": "https://tangalbert919.github.io",
+  "updateUrl": "",
+  "authorList": ["DarknesGaming"],
+  "credits": "Albert Tang (DarknesGaming)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
