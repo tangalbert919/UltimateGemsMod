@@ -5,7 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class ModBlock extends Block {
-    public ModBlock(Material mat, String name, CreativeTabs tabs, float hardness, float resistance, int harvest, String tool) {
+    ModBlock(Material mat, String name, CreativeTabs tabs, float hardness, float resistance, int harvest, String tool) {
         super(mat);
         setUnlocalizedName(name);
         setRegistryName(name);

@@ -18,7 +18,7 @@ public class BlockHandler {
     public static Block block;
     private static ItemBlock iblock;
     public static Block netheriron;
-    public static ItemBlock inetheriron;
+    static ItemBlock inetheriron;
     // Blocks are initialized here.
     public static void init() {
         block = new BasicBlock(Material.ROCK, "basicblock", CreativeTabHandler.blockTab, 5F, 15F, 3, "pickaxe");
