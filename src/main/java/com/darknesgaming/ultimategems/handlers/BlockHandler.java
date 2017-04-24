@@ -33,7 +33,7 @@ public class BlockHandler {
         GameRegistry.register(iblock, block.getRegistryName());
         // Nether ores
         GameRegistry.register(netheriron);
-        GameRegistry.register(inetheriron);
+        GameRegistry.register(inetheriron, netheriron.getRegistryName());
 
     }
     // The rendering is also registered.
