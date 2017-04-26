@@ -16,8 +16,9 @@ public class ItemHandler {
     // Make them public if used by classes in other packages.
     public static Item item; // Basic item
 
-    // New ingots
+    // Overworld items
     static Item palladiumingot;
+    static Item titaniumingot;
 
     static Item emeraldsword;
     // Items are initialized here.
@@ -27,6 +28,7 @@ public class ItemHandler {
         item = new BasicItem("basicitem", CreativeTabHandler.itemTab);
         // The ingots.
         palladiumingot = new PalladiumIngot("palladium_ingot", CreativeTabHandler.itemTab);
+        titaniumingot = new TitaniumIngot("titanium_ingot", CreativeTabHandler.itemTab);
         // This will be moved to its own handler soon.
         emeraldsword = new EmeraldSword("emerald_sword", MaterialHandler.WEAPON, CreativeTabHandler.weaponTab);
     }
@@ -34,13 +36,16 @@ public class ItemHandler {
     public static void register() {
         GameRegistry.register(item);
         GameRegistry.register(emeraldsword);
+        // TODO: Add textures for these items.
         GameRegistry.register(palladiumingot);
+        GameRegistry.register(titaniumingot);
     }
     // The rendering is registered so Forge knows where to look for the textures and models.
     public static void registerRenders() {
         registerRender(item);
         registerRender(emeraldsword);
         registerRender(palladiumingot);
+        registerRender(titaniumingot);
     }
     // This method tells Forge how to look for the textures and models.
     private static void registerRender(Item item) {

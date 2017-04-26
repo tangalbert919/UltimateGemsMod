@@ -13,7 +13,6 @@ public class NetherIronOre extends ModBlock {
     public NetherIronOre(Material mat, String name, CreativeTabs tabs, float hardness, float resistance, int harvest, String tool) {
         super(mat, name, tabs, hardness, resistance, harvest, tool);
     }
-    // TODO: Fix crash associated with texture renders.
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return new ItemBlock(BlockHandler.netheriron);

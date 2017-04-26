@@ -23,5 +23,7 @@ public class CraftingHandler {
         // Overworld blocks
         GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.palladiumingot, 9), BlockHandler.ipalladiumblock);
         GameRegistry.addRecipe(new ItemStack(BlockHandler.ipalladiumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.palladiumingot);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.titaniumingot, 9), BlockHandler.ititaniumblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.ititaniumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.titaniumingot);
     }
 }

@@ -1,9 +1,12 @@
 tile.basicblock.name=Red Diamond Ore
-tile.netherironore.name=Nether Iron Ore
 tile.palladium_ore.name=Palladium Ore
 tile.palladium_block.name=Palladium Block
+tile.titanium_ore.name=Titanium Ore
+tile.titanium_block.name=Titanium Block
+tile.netherironore.name=Nether Iron Ore
 item.basicitem.name=Red Diamond
 item.palladium_ingot.name=Palladium Ingot
+item.titanium_ingot.name=Titanium Ingot
 item.emerald_sword.name=Emerald Sword
 item.emerald_hoe.name=Emerald Hoe
 item.emerald_spade.name=Emerald Shovel

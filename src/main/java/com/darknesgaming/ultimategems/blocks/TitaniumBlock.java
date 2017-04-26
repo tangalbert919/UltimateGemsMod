@@ -8,14 +8,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
 import java.util.Random;
-
-// TODO: Make this smeltable in Tinkers' Construct, add fluid
-public class PalladiumBlock extends ModBlock {
-    public PalladiumBlock(Material mat, String name, CreativeTabs tab, float hardness, float resistance, int harvest, String tool) {
+// TODO: Make this smeltable in Tinkers' Construct
+public class TitaniumBlock extends ModBlock {
+    public TitaniumBlock(Material mat, String name, CreativeTabs tab, float hardness, float resistance, int harvest, String tool) {
         super(mat, name, tab, hardness, resistance, harvest, tool);
     }
-    @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return new ItemBlock(BlockHandler.palladiumblock);
+        return new ItemBlock(BlockHandler.titaniumblock);
     }
 }

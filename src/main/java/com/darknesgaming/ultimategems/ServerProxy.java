@@ -24,6 +24,7 @@ public class ServerProxy extends CommonProxy {
         BlockHandler.registerRenders();
         ToolHandler.registerRenders();
         ArmorHandler.registerRenders();
+        // HackerHander.registerRenders();
     }
     @Override
     public void postInit(FMLPostInitializationEvent event) {

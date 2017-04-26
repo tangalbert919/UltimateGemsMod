@@ -4,6 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
+/**
+ * When making new blocks, please extend to this class file.
+ * This is used to add new blocks to the game.
+ */
 public class ModBlock extends Block {
     ModBlock(Material mat, String name, CreativeTabs tabs, float hardness, float resistance, int harvest, String tool) {
         super(mat);
@@ -14,6 +18,7 @@ public class ModBlock extends Block {
         setResistance(resistance);
         setHarvestLevel(tool, harvest);
     }
+    // This constructor is only used for anything that either needs to tool or cannot be harvested.
     public ModBlock(Material mat, String name, CreativeTabs tabs, float hardness, float resistance) {
         super(mat);
         setUnlocalizedName(name);

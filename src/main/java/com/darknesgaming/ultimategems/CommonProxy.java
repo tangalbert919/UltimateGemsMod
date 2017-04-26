@@ -23,8 +23,8 @@ public class CommonProxy {
         ToolHandler.register();
         ArmorHandler.init();
         ArmorHandler.register();
-        HackerHandler.init();
-        HackerHandler.register();
+        //HackerHandler.init();
+        //HackerHandler.register();
     }
     // Place the world generators in here.
     public void init(FMLInitializationEvent event) {
