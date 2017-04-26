@@ -34,7 +34,7 @@ public class BlockHandler {
         block = new BasicBlock(Material.ROCK, "basicblock", CreativeTabHandler.blockTab, 5F, 15F, 3, "pickaxe");
         iblock = new ItemBlock(block);
         // Overworld ores or blocks
-        // TODO: Add textures for these overworld blocks.
+        // TODO: Fix crash associated with getItemDropped()
         palladiumore = new PalladiumOre(Material.ROCK, "palladium_ore", CreativeTabHandler.blockTab, 4F, 10F, 3, "pickaxe");
         ipalladiumore = new ItemBlock(palladiumore);
         palladiumblock = new PalladiumBlock(Material.ROCK, "palladium_block", CreativeTabHandler.blockTab, 6F, 15F, 3, "pickaxe");
