@@ -20,5 +20,8 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldChestplate, 1), "X X", "XXX", "XXX", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldLeggings, 1), "XXX", "X X", "X X", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldBoots, 1), "   ", "X X", "X X", 'X', Items.EMERALD);
+        // Overworld blocks
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.palladiumingot, 9), BlockHandler.ipalladiumblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.ipalladiumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.palladiumingot);
     }
 }

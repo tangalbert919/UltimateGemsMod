@@ -16,16 +16,17 @@ public class ItemHandler {
     // Make them public if used by classes in other packages.
     public static Item item; // Basic item
 
-    static Item emeraldsword;
+    // New ingots
+    static Item palladiumingot;
 
-    // Tools and weapons used by hackers.
-    private static Item hackeraxe;
-    private static Item hackersword;
+    static Item emeraldsword;
     // Items are initialized here.
     public static void init() {
         // For every item initialized, it has a registry name and a tab they will reside in.
         // This is the basic item.
         item = new BasicItem("basicitem", CreativeTabHandler.itemTab);
+        // The ingots.
+        palladiumingot = new PalladiumIngot("palladium_ingot", CreativeTabHandler.itemTab);
         // This will be moved to its own handler soon.
         emeraldsword = new EmeraldSword("emerald_sword", MaterialHandler.WEAPON, CreativeTabHandler.weaponTab);
     }
@@ -33,11 +34,13 @@ public class ItemHandler {
     public static void register() {
         GameRegistry.register(item);
         GameRegistry.register(emeraldsword);
+        GameRegistry.register(palladiumingot);
     }
     // The rendering is registered so Forge knows where to look for the textures and models.
     public static void registerRenders() {
         registerRender(item);
         registerRender(emeraldsword);
+        registerRender(palladiumingot);
     }
     // This method tells Forge how to look for the textures and models.
     private static void registerRender(Item item) {

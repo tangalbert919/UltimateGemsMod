@@ -85,3 +85,9 @@ Use this to build the project.
 ` ./gradlew build`
 
 Make sure you're in the same directory as build.gradle before you type this in. Your product will most likely be called "modid.jar".
+
+## TODO
+* Make this work with Tinkers' Construct.
+* Add more metals and other shiny gems.
+* Create a beta build for the general public.
+* Add more translations.

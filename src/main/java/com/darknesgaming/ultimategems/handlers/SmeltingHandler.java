@@ -10,7 +10,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class SmeltingHandler {
     public static void init() {
-        GameRegistry.addSmelting(Items.DIAMOND, new ItemStack(ItemHandler.item), 2.0F);
+        // Overworld ores
+        GameRegistry.addSmelting(BlockHandler.ipalladiumore, new ItemStack(ItemHandler.palladiumingot), 1.0F);
         // Nether ores
         GameRegistry.addSmelting(BlockHandler.inetheriron, new ItemStack(Items.IRON_INGOT), 1.0F);
     }

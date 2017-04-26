@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Main {
 
     public static final String MODID = "ultimategems";
-    public static final String VERSION = "Prototype build";
+    public static final String VERSION = "Alpha build";
 
     @SidedProxy(clientSide = "com.darknesgaming.ultimategems.ClientProxy", serverSide = "com.darknesgaming.ultimategems.ServerProxy")
     public static CommonProxy proxy;

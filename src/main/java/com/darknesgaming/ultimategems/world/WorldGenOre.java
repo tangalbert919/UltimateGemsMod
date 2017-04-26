@@ -37,7 +37,7 @@ public class WorldGenOre implements IWorldGenerator {
     }
     private void genSurface(World world, Random rand, int chunkX, int chunkZ) {
         addOreSpawn(BlockHandler.block.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 24, 80, 10, 150, BlockMatcher.forBlock(Blocks.STONE));
-        addOreSpawn(Blocks.EMERALD_ORE.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 24, 25, 5, 30, BlockMatcher.forBlock(Blocks.STONE));
+        addOreSpawn(Blocks.EMERALD_ORE.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 25, 5, 30, BlockMatcher.forBlock(Blocks.STONE));
     }
     private void genNether(World world, Random rand, int chunkX, int chunkZ) {
         addOreSpawn(BlockHandler.netheriron.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 30, 10, 245, BlockMatcher.forBlock(Blocks.NETHERRACK));
