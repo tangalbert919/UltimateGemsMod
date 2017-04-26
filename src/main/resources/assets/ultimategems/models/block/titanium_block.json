@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ultimategems:blocks/palladium_block"
+    "all": "ultimategems:blocks/titanium_block"
   }
 }
