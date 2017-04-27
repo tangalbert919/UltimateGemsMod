@@ -20,21 +20,20 @@ public class BlockHandler {
     public static Block netheriron;
     public static ItemBlock inetheriron;
     // Overworld ores or blocks.
-    public static Block palladiumore;
-    static ItemBlock ipalladiumore;
-    public static Block palladiumblock;
-    static ItemBlock ipalladiumblock;
-    public static Block titaniumore;
-    static ItemBlock ititaniumore;
-    public static Block titaniumblock;
-    static ItemBlock ititaniumblock;
+    private static Block palladiumore;
+    public static ItemBlock ipalladiumore;
+    private static Block palladiumblock;
+    public static ItemBlock ipalladiumblock;
+    private static Block titaniumore;
+    public static ItemBlock ititaniumore;
+    private static Block titaniumblock;
+    public static ItemBlock ititaniumblock;
     // Blocks are initialized here during pre-initialization.
     public static void init() {
         // Delete this soon, or rename the class file.
         block = new BasicBlock(Material.ROCK, "basicblock", CreativeTabHandler.blockTab, 5F, 15F, 3, "pickaxe");
         iblock = new ItemBlock(block);
         // Overworld ores or blocks
-        // TODO: Fix crash associated with getItemDropped()
         palladiumore = new PalladiumOre(Material.ROCK, "palladium_ore", CreativeTabHandler.blockTab, 4F, 10F, 3, "pickaxe");
         ipalladiumore = new ItemBlock(palladiumore);
         palladiumblock = new PalladiumBlock(Material.ROCK, "palladium_block", CreativeTabHandler.blockTab, 6F, 15F, 3, "pickaxe");

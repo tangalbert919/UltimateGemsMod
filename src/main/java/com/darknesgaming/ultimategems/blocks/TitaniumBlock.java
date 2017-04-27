@@ -13,7 +13,12 @@ public class TitaniumBlock extends ModBlock {
     public TitaniumBlock(Material mat, String name, CreativeTabs tab, float hardness, float resistance, int harvest, String tool) {
         super(mat, name, tab, hardness, resistance, harvest, tool);
     }
+    @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return new ItemBlock(BlockHandler.titaniumblock);
+        return BlockHandler.ititaniumblock;
+    }
+    @Override
+    public int quantityDropped(IBlockState state, int fortune, Random rand) {
+        return 1;
     }
 }

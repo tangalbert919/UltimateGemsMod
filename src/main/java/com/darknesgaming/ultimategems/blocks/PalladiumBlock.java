@@ -16,6 +16,10 @@ public class PalladiumBlock extends ModBlock {
     }
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return new ItemBlock(BlockHandler.palladiumblock);
+        return BlockHandler.ipalladiumblock;
+    }
+    @Override
+    public int quantityDropped(IBlockState state, int fortune, Random rand) {
+        return 1;
     }
 }
