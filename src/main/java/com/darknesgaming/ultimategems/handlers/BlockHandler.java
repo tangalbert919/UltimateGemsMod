@@ -18,7 +18,7 @@ public class BlockHandler {
     private static ItemBlock iblock;
     // Nether ores or blocks
     public static Block netheriron;
-    static ItemBlock inetheriron;
+    public static ItemBlock inetheriron;
     // Overworld ores or blocks.
     public static Block palladiumore;
     static ItemBlock ipalladiumore;
