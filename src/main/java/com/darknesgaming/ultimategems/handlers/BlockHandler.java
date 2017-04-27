@@ -20,11 +20,11 @@ public class BlockHandler {
     public static Block netheriron;
     public static ItemBlock inetheriron;
     // Overworld ores or blocks.
-    private static Block palladiumore;
+    public static Block palladiumore;
     public static ItemBlock ipalladiumore;
     private static Block palladiumblock;
     public static ItemBlock ipalladiumblock;
-    private static Block titaniumore;
+    public static Block titaniumore;
     public static ItemBlock ititaniumore;
     private static Block titaniumblock;
     public static ItemBlock ititaniumblock;
@@ -34,16 +34,16 @@ public class BlockHandler {
         block = new BasicBlock(Material.ROCK, "basicblock", CreativeTabHandler.blockTab, 5F, 15F, 3, "pickaxe");
         iblock = new ItemBlock(block);
         // Overworld ores or blocks
-        palladiumore = new PalladiumOre(Material.ROCK, "palladium_ore", CreativeTabHandler.blockTab, 4F, 10F, 3, "pickaxe");
+        palladiumore = new PalladiumOre(Material.ROCK, "palladium_ore", CreativeTabHandler.blockTab, 4F, 10F, 2, "pickaxe");
         ipalladiumore = new ItemBlock(palladiumore);
-        palladiumblock = new PalladiumBlock(Material.ROCK, "palladium_block", CreativeTabHandler.blockTab, 6F, 15F, 3, "pickaxe");
+        palladiumblock = new PalladiumBlock(Material.ROCK, "palladium_block", CreativeTabHandler.blockTab, 5F, 15F, 2, "pickaxe");
         ipalladiumblock = new ItemBlock(palladiumblock);
-        titaniumore = new TitaniumOre(Material.ROCK, "titanium_ore", CreativeTabHandler.blockTab, 8F, 20F, 4, "pickaxe");
+        titaniumore = new TitaniumOre(Material.ROCK, "titanium_ore", CreativeTabHandler.blockTab, 7F, 20F, 3, "pickaxe");
         ititaniumore = new ItemBlock(titaniumore);
-        titaniumblock = new TitaniumBlock(Material.ROCK, "titanium_block", CreativeTabHandler.blockTab, 10F, 25F, 4, "pickaxe");
+        titaniumblock = new TitaniumBlock(Material.ROCK, "titanium_block", CreativeTabHandler.blockTab, 9F, 25F, 3, "pickaxe");
         ititaniumblock = new ItemBlock(titaniumblock);
         // Nether ores
-        netheriron = new NetherIronOre(Material.ROCK, "netherironore", CreativeTabHandler.blockTab, 3F, 10F, 2, "pickaxe");
+        netheriron = new NetherIronOre(Material.ROCK, "netherironore", CreativeTabHandler.blockTab, 3F, 10F, 1, "pickaxe");
         inetheriron = new ItemBlock(netheriron);
     }
     // The blocks are then registered during pre-initialization.

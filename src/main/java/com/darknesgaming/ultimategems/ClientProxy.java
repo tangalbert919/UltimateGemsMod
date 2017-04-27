@@ -22,6 +22,7 @@ public class ClientProxy extends CommonProxy {
         BlockHandler.registerRenders();
         ToolHandler.registerRenders();
         ArmorHandler.registerRenders();
+        WeaponHandler.registerRenders();
         // HackerHandler.registerRenders();
     }
 

@@ -20,7 +20,6 @@ public class ItemHandler {
     static Item palladiumingot;
     static Item titaniumingot;
 
-    static Item emeraldsword;
     // Items are initialized here.
     public static void init() {
         // For every item initialized, it has a registry name and a tab they will reside in.
@@ -29,13 +28,10 @@ public class ItemHandler {
         // The ingots.
         palladiumingot = new PalladiumIngot("palladium_ingot", CreativeTabHandler.itemTab);
         titaniumingot = new TitaniumIngot("titanium_ingot", CreativeTabHandler.itemTab);
-        // This will be moved to its own handler soon.
-        emeraldsword = new EmeraldSword("emerald_sword", MaterialHandler.WEAPON, CreativeTabHandler.weaponTab);
     }
     // These items will then be registered.
     public static void register() {
         GameRegistry.register(item);
-        GameRegistry.register(emeraldsword);
         // TODO: Add textures for these items.
         GameRegistry.register(palladiumingot);
         GameRegistry.register(titaniumingot);
@@ -43,7 +39,6 @@ public class ItemHandler {
     // The rendering is registered so Forge knows where to look for the textures and models.
     public static void registerRenders() {
         registerRender(item);
-        registerRender(emeraldsword);
         registerRender(palladiumingot);
         registerRender(titaniumingot);
     }

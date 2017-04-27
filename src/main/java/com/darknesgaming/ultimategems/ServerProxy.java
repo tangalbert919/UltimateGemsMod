@@ -1,9 +1,6 @@
 package com.darknesgaming.ultimategems;
 
-import com.darknesgaming.ultimategems.handlers.ArmorHandler;
-import com.darknesgaming.ultimategems.handlers.BlockHandler;
-import com.darknesgaming.ultimategems.handlers.ItemHandler;
-import com.darknesgaming.ultimategems.handlers.ToolHandler;
+import com.darknesgaming.ultimategems.handlers.*;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -24,6 +21,7 @@ public class ServerProxy extends CommonProxy {
         BlockHandler.registerRenders();
         ToolHandler.registerRenders();
         ArmorHandler.registerRenders();
+        WeaponHandler.registerRenders();
         // HackerHander.registerRenders();
     }
     @Override

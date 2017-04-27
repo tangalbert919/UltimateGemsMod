@@ -19,12 +19,23 @@ public class ToolHandler {
     static Item emeraldaxe;
     static Item emeraldspade;
     static Item emeraldhoe;
+    // Palladium Tools
+    // TODO: Create class files and textures for these tools.
+    static Item palladiumpickaxe;
+    static Item palladiumaxe;
+    static Item palladiumspade;
+    static Item palladoumhoe;
+    // Titanium Tools
+    static Item titaniumpickaxe;
+    static Item titaniumaxe;
+    static Item titaniumspade;
+    static Item titaniumhoe;
     // Tools are initialized here.
     public static void init() {
-        emeraldpickaxe = new EmeraldPickaxe("emerald_pickaxe", MaterialHandler.TUTORIAL, CreativeTabHandler.toolTab);
-        emeraldaxe = new EmeraldAxe("emerald_axe", MaterialHandler.AXE, CreativeTabHandler.toolTab);
-        emeraldspade = new EmeraldSpade("emerald_spade", MaterialHandler.TUTORIAL, CreativeTabHandler.toolTab);
-        emeraldhoe = new EmeraldHoe("emerald_hoe", MaterialHandler.TUTORIAL, CreativeTabHandler.toolTab);
+        emeraldpickaxe = new EmeraldPickaxe("emerald_pickaxe", MaterialHandler.EMERALD_TOOL, CreativeTabHandler.toolTab);
+        emeraldaxe = new EmeraldAxe("emerald_axe", MaterialHandler.EMERALD_AXE, CreativeTabHandler.toolTab);
+        emeraldspade = new EmeraldSpade("emerald_spade", MaterialHandler.EMERALD_TOOL, CreativeTabHandler.toolTab);
+        emeraldhoe = new EmeraldHoe("emerald_hoe", MaterialHandler.EMERALD_TOOL, CreativeTabHandler.toolTab);
     }
     // These tools will then be registered.
     public static void register() {

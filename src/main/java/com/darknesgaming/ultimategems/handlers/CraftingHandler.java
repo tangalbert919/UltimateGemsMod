@@ -14,12 +14,20 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(ToolHandler.emeraldaxe, 1), "XX ", "XC ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ToolHandler.emeraldhoe, 1), "XX ", " C ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ToolHandler.emeraldspade, 1), " X ", " C ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
-        GameRegistry.addRecipe(new ItemStack(ItemHandler.emeraldsword, 1), " X ", " X ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(WeaponHandler.emeraldsword, 1), " X ", " X ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
         // Armor
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldHelmet, 1), "XXX", "X X", "   ", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldChestplate, 1), "X X", "XXX", "XXX", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldLeggings, 1), "XXX", "X X", "X X", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldBoots, 1), "   ", "X X", "X X", 'X', Items.EMERALD);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.palladiumHelmet, 1), "XXX", "X X", "   ", 'X', ItemHandler.palladiumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.palladiumChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.palladiumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.palladiumLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.palladiumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.palladiumBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.palladiumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.titaniumHelmet, 1), "XXX", "X X", "   ", 'X', ItemHandler.titaniumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.titaniumChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.titaniumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.titaniumLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.titaniumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.titaniumBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.titaniumingot);
         // Overworld blocks
         GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.palladiumingot, 9), BlockHandler.ipalladiumblock);
         GameRegistry.addRecipe(new ItemStack(BlockHandler.ipalladiumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.palladiumingot);

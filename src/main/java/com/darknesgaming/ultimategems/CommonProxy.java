@@ -23,6 +23,8 @@ public class CommonProxy {
         ToolHandler.register();
         ArmorHandler.init();
         ArmorHandler.register();
+        WeaponHandler.init();
+        WeaponHandler.register();
         //HackerHandler.init();
         //HackerHandler.register();
     }

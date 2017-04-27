@@ -26,7 +26,7 @@ class CreativeTabHandler {
     static CreativeTabs weaponTab = new CreativeTabs("weapon_tab") {
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(Item.getItemById(Item.getIdFromItem(ItemHandler.emeraldsword)));
+            return new ItemStack(Item.getItemById(Item.getIdFromItem(WeaponHandler.emeraldsword)));
         }
     };
 }
