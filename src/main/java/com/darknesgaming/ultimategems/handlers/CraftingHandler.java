@@ -10,11 +10,24 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class CraftingHandler {
     public static void init() {
+        // Emerald Tools
         GameRegistry.addRecipe(new ItemStack(ToolHandler.emeraldpickaxe, 1), "XXX", " C ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ToolHandler.emeraldaxe, 1), "XX ", "XC ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ToolHandler.emeraldhoe, 1), "XX ", " C ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ToolHandler.emeraldspade, 1), " X ", " C ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(WeaponHandler.emeraldsword, 1), " X ", " X ", " C ", 'X', Items.EMERALD, 'C', Items.STICK);
+        // Palladium Tools
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.palladiumpickaxe, 1), "XXX", " C ", " C ", 'X', ItemHandler.palladiumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.palladiumaxe, 1), "XX ", "XC ", " C ", 'X', ItemHandler.palladiumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.palladiumhoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.palladiumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.palladiumspade, 1), " X ", " C ", " C ", 'X', ItemHandler.palladiumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(WeaponHandler.palladiumsword, 1), " X ", " X ", " C ", 'X', ItemHandler.palladiumingot, 'C', Items.STICK);
+        // Titanium Tools
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.titaniumpickaxe, 1), "XXX", " C ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.titaniumaxe, 1), "XX ", "XC ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.titaniumhoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.titaniumspade, 1), " X ", " C ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(WeaponHandler.titaniumsword, 1), " X ", " X ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
         // Armor
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldHelmet, 1), "XXX", "X X", "   ", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldChestplate, 1), "X X", "XXX", "XXX", 'X', Items.EMERALD);

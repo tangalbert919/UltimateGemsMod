@@ -26,7 +26,6 @@ public class MaterialHandler {
     static Item.ToolMaterial HACKER = EnumHelper.addToolMaterial("hacker", 3, 32767, 9999F, 9999F, 20);
     // Armor
     static ItemArmor.ArmorMaterial EMERALD = EnumHelper.addArmorMaterial("emerald_armor", "ultimategems:emerald_armor", 700, new int[]{3,4,6,3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3F);
-    // TODO: Create textures for Palladium armor.
     static ItemArmor.ArmorMaterial PALLADIUM = EnumHelper.addArmorMaterial("palladium_armor", "ultimategems:palladium_armor", 300, new int[]{2,3,4,2}, 6, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1F);
     static ItemArmor.ArmorMaterial TITANIUM = EnumHelper.addArmorMaterial("titanium_armor", "ultimategems:titanium_armor", 1500, new int[]{4,5,7,4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5F);
 }

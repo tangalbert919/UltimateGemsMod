@@ -20,13 +20,11 @@ public class ArmorHandler {
     static Item emeraldLeggings;
     static Item emeraldBoots;
     // Palladium armor
-    // TODO: Add textures for Palladium armor.
     static Item palladiumHelmet;
     static Item palladiumChestplate;
     static Item palladiumLeggings;
     static Item palladiumBoots;
     // Titanium armor
-    // TODO: Add textures for Titanium armor.
     static Item titaniumHelmet;
     static Item titaniumChestplate;
     static Item titaniumLeggings;

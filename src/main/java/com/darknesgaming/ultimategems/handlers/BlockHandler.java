@@ -52,7 +52,6 @@ public class BlockHandler {
         GameRegistry.register(block);
         GameRegistry.register(iblock, block.getRegistryName());
         // Overworld ores or blocks.
-        // TODO: Add textures for overworld blocks.
         GameRegistry.register(palladiumore);
         GameRegistry.register(ipalladiumore, palladiumore.getRegistryName());
         GameRegistry.register(palladiumblock);
@@ -62,7 +61,6 @@ public class BlockHandler {
         GameRegistry.register(titaniumblock);
         GameRegistry.register(ititaniumblock, titaniumblock.getRegistryName());
         // Nether ores
-        // TODO: Add textures for nether blocks.
         GameRegistry.register(netheriron);
         GameRegistry.register(inetheriron, netheriron.getRegistryName());
 

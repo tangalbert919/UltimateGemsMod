@@ -1,8 +1,8 @@
 package com.darknesgaming.ultimategems.handlers;
 
-import com.darknesgaming.ultimategems.items.HackersAxe;
-import com.darknesgaming.ultimategems.items.HackersPickaxe;
-import com.darknesgaming.ultimategems.items.HackersSword;
+import com.darknesgaming.ultimategems.items.ModAxe;
+import com.darknesgaming.ultimategems.items.ModPickaxe;
+import com.darknesgaming.ultimategems.items.ModSword;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -17,9 +17,9 @@ public class HackerHandler {
     private static Item hackersword;
     private static Item hackerpickaxe;
     public static void init() {
-        hackeraxe = new HackersAxe("hackers_axe", MaterialHandler.HACKER).setNoRepair();
-        hackersword = new HackersSword("hackers_sword", MaterialHandler.HACKER).setNoRepair();
-        hackerpickaxe = new HackersPickaxe("hackers_pickaxe", MaterialHandler.HACKER).setNoRepair();
+        hackeraxe = new ModAxe("hackers_axe", MaterialHandler.HACKER).setNoRepair();
+        hackersword = new ModSword("hackers_sword", MaterialHandler.HACKER).setNoRepair();
+        hackerpickaxe = new ModPickaxe("hackers_pickaxe", MaterialHandler.HACKER).setNoRepair();
     }
     public static void register() {
         GameRegistry.register(hackersword);
