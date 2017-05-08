@@ -2,6 +2,7 @@ package com.darknesgaming.ultimategems;
 
 import com.darknesgaming.ultimategems.handlers.*;
 import com.darknesgaming.ultimategems.world.WorldGenOre;
+import com.darknesgaming.ultimategems.world.WorldHacker;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -31,6 +32,7 @@ public class CommonProxy {
     // Place the world generators in here.
     public void init(FMLInitializationEvent event) {
         GameRegistry.registerWorldGenerator(new WorldGenOre(), 0);
+        //GameRegistry.registerWorldGenerator(new WorldHacker(), 0);
     }
     // Recipes must be initialized and registered during post-initialization.
     public void postInit(FMLPostInitializationEvent event) {
