@@ -9,7 +9,7 @@ import net.minecraft.creativetab.CreativeTabs;
  * This is used to add new blocks to the game.
  */
 public class ModBlock extends Block {
-    ModBlock(Material mat, String name, CreativeTabs tabs, float hardness, float resistance, int harvest, String tool) {
+    public ModBlock(Material mat, String name, CreativeTabs tabs, float hardness, float resistance, int harvest, String tool) {
         super(mat);
         setUnlocalizedName(name);
         setRegistryName(name);

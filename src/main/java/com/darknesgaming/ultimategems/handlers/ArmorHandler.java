@@ -1,8 +1,6 @@
 package com.darknesgaming.ultimategems.handlers;
 
-import com.darknesgaming.ultimategems.items.EmeraldArmor;
-import com.darknesgaming.ultimategems.items.PalladiumArmor;
-import com.darknesgaming.ultimategems.items.TitaniumArmor;
+import com.darknesgaming.ultimategems.items.ModArmor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -31,18 +29,18 @@ public class ArmorHandler {
     static Item titaniumBoots;
     // The armor needs to be initialized first.
     public static void init() {
-        emeraldHelmet = new EmeraldArmor("emerald_helmet", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
-        emeraldChestplate = new EmeraldArmor("emerald_chestplate", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
-        emeraldLeggings = new EmeraldArmor("emerald_leggings", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
-        emeraldBoots = new EmeraldArmor("emerald_boots", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
-        palladiumHelmet = new PalladiumArmor("palladium_helmet", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
-        palladiumChestplate = new PalladiumArmor("palladium_chestplate", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
-        palladiumLeggings = new PalladiumArmor("palladium_leggings", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
-        palladiumBoots = new PalladiumArmor("palladium_boots", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
-        titaniumHelmet = new TitaniumArmor("titanium_helmet", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
-        titaniumChestplate = new TitaniumArmor("titanium_chestplate", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
-        titaniumLeggings = new TitaniumArmor("titanium_leggings", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
-        titaniumBoots = new TitaniumArmor("titanium_boots", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        emeraldHelmet = new ModArmor("emerald_helmet", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        emeraldChestplate = new ModArmor("emerald_chestplate", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        emeraldLeggings = new ModArmor("emerald_leggings", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        emeraldBoots = new ModArmor("emerald_boots", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        palladiumHelmet = new ModArmor("palladium_helmet", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        palladiumChestplate = new ModArmor("palladium_chestplate", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        palladiumLeggings = new ModArmor("palladium_leggings", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        palladiumBoots = new ModArmor("palladium_boots", MaterialHandler.PALLADIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        titaniumHelmet = new ModArmor("titanium_helmet", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        titaniumChestplate = new ModArmor("titanium_chestplate", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        titaniumLeggings = new ModArmor("titanium_leggings", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        titaniumBoots = new ModArmor("titanium_boots", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
     }
     // The armor will then be registered.
     public static void register() {

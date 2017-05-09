@@ -14,43 +14,35 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  * blocks during pre-initialization.
  */
 public class BlockHandler {
-    public static Block block;
-    private static ItemBlock iblock;
     // Nether ores or blocks
     public static Block netheriron;
-    public static ItemBlock inetheriron;
+    static ItemBlock inetheriron;
     // Overworld ores or blocks.
     public static Block palladiumore;
-    public static ItemBlock ipalladiumore;
+    static ItemBlock ipalladiumore;
     private static Block palladiumblock;
-    public static ItemBlock ipalladiumblock;
+    static ItemBlock ipalladiumblock;
     public static Block titaniumore;
-    public static ItemBlock ititaniumore;
+    static ItemBlock ititaniumore;
     private static Block titaniumblock;
-    public static ItemBlock ititaniumblock;
+    static ItemBlock ititaniumblock;
     // Blocks are initialized here during pre-initialization.
     public static void init() {
-        // Delete this soon, or rename the class file.
-        block = new BasicBlock(Material.ROCK, "basicblock", CreativeTabHandler.blockTab, 5F, 15F, 3, "pickaxe");
-        iblock = new ItemBlock(block);
         // Overworld ores or blocks
-        palladiumore = new PalladiumOre(Material.ROCK, "palladium_ore", CreativeTabHandler.blockTab, 4F, 10F, 2, "pickaxe");
+        palladiumore = new ModBlock(Material.ROCK, "palladium_ore", CreativeTabHandler.blockTab, 4F, 10F, 2, "pickaxe");
         ipalladiumore = new ItemBlock(palladiumore);
-        palladiumblock = new PalladiumBlock(Material.ROCK, "palladium_block", CreativeTabHandler.blockTab, 5F, 15F, 2, "pickaxe");
+        palladiumblock = new ModBlock(Material.ROCK, "palladium_block", CreativeTabHandler.blockTab, 5F, 15F, 2, "pickaxe");
         ipalladiumblock = new ItemBlock(palladiumblock);
-        titaniumore = new TitaniumOre(Material.ROCK, "titanium_ore", CreativeTabHandler.blockTab, 7F, 20F, 3, "pickaxe");
+        titaniumore = new ModBlock(Material.ROCK, "titanium_ore", CreativeTabHandler.blockTab, 7F, 20F, 3, "pickaxe");
         ititaniumore = new ItemBlock(titaniumore);
-        titaniumblock = new TitaniumBlock(Material.ROCK, "titanium_block", CreativeTabHandler.blockTab, 9F, 25F, 3, "pickaxe");
+        titaniumblock = new ModBlock(Material.ROCK, "titanium_block", CreativeTabHandler.blockTab, 9F, 25F, 3, "pickaxe");
         ititaniumblock = new ItemBlock(titaniumblock);
         // Nether ores
-        netheriron = new NetherIronOre(Material.ROCK, "netherironore", CreativeTabHandler.blockTab, 3F, 10F, 1, "pickaxe");
+        netheriron = new ModBlock(Material.ROCK, "netherironore", CreativeTabHandler.blockTab, 3F, 10F, 1, "pickaxe");
         inetheriron = new ItemBlock(netheriron);
     }
     // The blocks are then registered during pre-initialization.
     public static void register() {
-        // Basic ore, texture needs work.
-        GameRegistry.register(block);
-        GameRegistry.register(iblock, block.getRegistryName());
         // Overworld ores or blocks.
         GameRegistry.register(palladiumore);
         GameRegistry.register(ipalladiumore, palladiumore.getRegistryName());
@@ -67,7 +59,6 @@ public class BlockHandler {
     }
     // The rendering is registered during initialization.
     public static void registerRenders() {
-        registerRender(block);
         // Nether ores
         registerRender(netheriron);
         // Overworld ores or blocks

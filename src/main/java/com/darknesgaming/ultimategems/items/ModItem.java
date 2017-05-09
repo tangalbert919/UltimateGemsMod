@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
  * This is used to add new items to the game.
  */
 public class ModItem extends Item {
-    ModItem(String name, CreativeTabs tab) {
+    public ModItem(String name, CreativeTabs tab) {
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(tab);
