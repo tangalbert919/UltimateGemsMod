@@ -19,10 +19,10 @@ public class ItemHandler {
     // Overworld items
     static Item palladiumingot;
     static Item titaniumingot;
-    static Item ruby;
-    static Item sapphire;
-    static Item topaz;
-    static Item peridot;
+    public static Item ruby;
+    public static Item sapphire;
+    public static Item topaz;
+    public static Item peridot;
 
     // Items are initialized here.
     public static void init() {

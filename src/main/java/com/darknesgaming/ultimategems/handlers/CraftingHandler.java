@@ -46,5 +46,13 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(BlockHandler.ipalladiumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.palladiumingot);
         GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.titaniumingot, 9), BlockHandler.ititaniumblock);
         GameRegistry.addRecipe(new ItemStack(BlockHandler.ititaniumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.titaniumingot);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.ruby, 9), BlockHandler.irubyblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.irubyblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.ruby);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.sapphire, 9), BlockHandler.isapphireblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.isapphireblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.sapphire);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.topaz, 9), BlockHandler.itopazblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.itopazblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.topaz);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.peridot, 9), BlockHandler.iperidotblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.iperidotblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.peridot);
     }
 }

@@ -8,13 +8,13 @@ class CreativeTabHandler {
     static CreativeTabs blockTab = new CreativeTabs("block_tab") {
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(Item.getItemFromBlock(BlockHandler.block));
+            return new ItemStack(Item.getItemFromBlock(BlockHandler.palladiumore));
         }
     };
     static CreativeTabs itemTab = new CreativeTabs("item_tab") {
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(Item.getItemById(Item.getIdFromItem(ItemHandler.item)));
+            return new ItemStack(Item.getItemById(Item.getIdFromItem(ItemHandler.palladiumingot)));
         }
     };
     static CreativeTabs toolTab = new CreativeTabs("tool_tab") {

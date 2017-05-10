@@ -2,7 +2,12 @@ package com.darknesgaming.ultimategems.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+
+import java.util.Random;
 
 /**
  * When making new blocks, please extend to this class file.
