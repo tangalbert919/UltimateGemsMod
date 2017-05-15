@@ -37,7 +37,7 @@ public class BlockHandler {
     public static Block topazore;
     private static ItemBlock itopazore;
     private static Block topazblock;
-    private static ItemBlock itopazblock;
+    static ItemBlock itopazblock;
     public static Block peridotore;
     private static ItemBlock iperidotore;
     private static Block peridotblock;

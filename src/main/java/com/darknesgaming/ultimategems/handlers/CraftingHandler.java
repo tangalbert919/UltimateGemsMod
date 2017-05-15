@@ -28,6 +28,18 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(ToolHandler.titaniumhoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ToolHandler.titaniumspade, 1), " X ", " C ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(WeaponHandler.titaniumsword, 1), " X ", " X ", " C ", 'X', ItemHandler.titaniumingot, 'C', Items.STICK);
+        // Ruby Tools
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.rubypickaxe, 1), "XXX", " C ", " C ", 'X', ItemHandler.ruby, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.rubyaxe, 1), "XX ", "XC ", " C ", 'X', ItemHandler.ruby, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.rubyhoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.ruby, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.rubyspade, 1), " X ", " C ", " C ", 'X', ItemHandler.ruby, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(WeaponHandler.rubysword, 1), " X ", " X ", " C ", 'X', ItemHandler.ruby, 'C', Items.STICK);
+        // Sapphire Tools
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.sapphirepickaxe, 1), "XXX", " C ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.sapphireaxe, 1), "XX ", "XC ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.sapphirehoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.sapphirespade, 1), " X ", " C ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(WeaponHandler.sapphiresword, 1), " X ", " X ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
         // Armor
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldHelmet, 1), "XXX", "X X", "   ", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldChestplate, 1), "X X", "XXX", "XXX", 'X', Items.EMERALD);
@@ -41,6 +53,14 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.titaniumChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.titaniumingot);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.titaniumLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.titaniumingot);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.titaniumBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.titaniumingot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.rubyHelmet, 1), "XXX", "X X", "   ", 'X', ItemHandler.ruby);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.rubyChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.ruby);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.rubyLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.ruby);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.rubyBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.ruby);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.sapphireHelmet, 1), "XXX", "X X", "   ", 'X', ItemHandler.sapphire);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.sapphireChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.sapphire);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.sapphireLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.sapphire);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.sapphireBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.sapphire);
         // Overworld blocks
         GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.palladiumingot, 9), BlockHandler.ipalladiumblock);
         GameRegistry.addRecipe(new ItemStack(BlockHandler.ipalladiumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.palladiumingot);

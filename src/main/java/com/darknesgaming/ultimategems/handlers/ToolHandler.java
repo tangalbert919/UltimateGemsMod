@@ -29,6 +29,16 @@ public class ToolHandler {
     static Item titaniumaxe;
     static Item titaniumspade;
     static Item titaniumhoe;
+    // Ruby Tools
+    static Item rubypickaxe;
+    static Item rubyaxe;
+    static Item rubyspade;
+    static Item rubyhoe;
+    // Sapphire Tools
+    static Item sapphirepickaxe;
+    static Item sapphireaxe;
+    static Item sapphirespade;
+    static Item sapphirehoe;
     // Tools are initialized here.
     public static void init() {
         emeraldpickaxe = new ModPickaxe("emerald_pickaxe", MaterialHandler.EMERALD_TOOL, CreativeTabHandler.toolTab);
@@ -37,7 +47,7 @@ public class ToolHandler {
         emeraldhoe = new ModHoe("emerald_hoe", MaterialHandler.EMERALD_TOOL, CreativeTabHandler.toolTab);
         // Palladium Tools
         palladiumpickaxe = new ModPickaxe("palladium_pickaxe", MaterialHandler.PALLADIUM_TOOL, CreativeTabHandler.toolTab);
-        palladiumaxe = new ModAxe("palladium_axe", MaterialHandler.PALLADIUM_TOOL, CreativeTabHandler.toolTab);
+        palladiumaxe = new ModAxe("palladium_axe", MaterialHandler.PALLADIUM_AXE, CreativeTabHandler.toolTab);
         palladiumspade = new ModSpade("palladium_spade", MaterialHandler.PALLADIUM_TOOL, CreativeTabHandler.toolTab);
         palladiumhoe = new ModHoe("palladium_hoe", MaterialHandler.PALLADIUM_TOOL, CreativeTabHandler.toolTab);
         // Titanium Tools
@@ -45,7 +55,16 @@ public class ToolHandler {
         titaniumaxe = new ModAxe("titanium_axe", MaterialHandler.TITANIUM_AXE, CreativeTabHandler.toolTab);
         titaniumspade = new ModSpade("titanium_spade", MaterialHandler.TITANIUM_TOOL, CreativeTabHandler.toolTab);
         titaniumhoe = new ModHoe("titanium_hoe", MaterialHandler.TITANIUM_TOOL, CreativeTabHandler.toolTab);
-
+        // Ruby Tools
+        rubypickaxe = new ModPickaxe("ruby_pickaxe", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
+        rubyaxe = new ModAxe("ruby_axe", MaterialHandler.RS_AXE, CreativeTabHandler.toolTab);
+        rubyspade = new ModSpade("ruby_spade", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
+        rubyhoe = new ModHoe("ruby_hoe", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
+        // Sapphire Tools
+        sapphirepickaxe = new ModPickaxe("sapphire_pickaxe", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
+        sapphireaxe = new ModAxe("sapphire_axe", MaterialHandler.RS_AXE, CreativeTabHandler.toolTab);
+        sapphirespade = new ModSpade("sapphire_spade", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
+        sapphirehoe = new ModHoe("sapphire_hoe", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
     }
     // These tools will then be registered.
     public static void register() {
@@ -58,9 +77,19 @@ public class ToolHandler {
         GameRegistry.register(palladiumpickaxe);
         GameRegistry.register(palladiumspade);
         GameRegistry.register(titaniumaxe);
-        GameRegistry.register(titaniumpickaxe);
         GameRegistry.register(titaniumhoe);
+        GameRegistry.register(titaniumpickaxe);
         GameRegistry.register(titaniumspade);
+        // TODO: Make textures for these tools.
+        GameRegistry.register(rubyaxe);
+        GameRegistry.register(rubyhoe);
+        GameRegistry.register(rubypickaxe);
+        GameRegistry.register(rubyspade);
+        GameRegistry.register(sapphireaxe);
+        GameRegistry.register(sapphirehoe);
+        GameRegistry.register(sapphirepickaxe);
+        GameRegistry.register(sapphirespade);
+
     }
     // The renderings need to be registered as well.
     public static void registerRenders() {
@@ -76,6 +105,14 @@ public class ToolHandler {
         registerRender(titaniumhoe);
         registerRender(titaniumpickaxe);
         registerRender(titaniumspade);
+        registerRender(rubyaxe);
+        registerRender(rubyhoe);
+        registerRender(rubypickaxe);
+        registerRender(rubyspade);
+        registerRender(sapphireaxe);
+        registerRender(sapphirehoe);
+        registerRender(sapphirepickaxe);
+        registerRender(sapphirespade);
     }
     // Forge needs to know how to search for the models and textures.
     private static void registerRender(Item item) {

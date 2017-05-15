@@ -27,6 +27,16 @@ public class ArmorHandler {
     static Item titaniumChestplate;
     static Item titaniumLeggings;
     static Item titaniumBoots;
+    // Ruby armor
+    static Item rubyHelmet;
+    static Item rubyChestplate;
+    static Item rubyLeggings;
+    static Item rubyBoots;
+    // Sapphire armor
+    static Item sapphireHelmet;
+    static Item sapphireChestplate;
+    static Item sapphireLeggings;
+    static Item sapphireBoots;
     // The armor needs to be initialized first.
     public static void init() {
         emeraldHelmet = new ModArmor("emerald_helmet", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
@@ -41,6 +51,14 @@ public class ArmorHandler {
         titaniumChestplate = new ModArmor("titanium_chestplate", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
         titaniumLeggings = new ModArmor("titanium_leggings", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
         titaniumBoots = new ModArmor("titanium_boots", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        rubyHelmet = new ModArmor("ruby_helmet", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        rubyChestplate = new ModArmor("ruby_chestplate", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        rubyLeggings = new ModArmor("ruby_leggings", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        rubyBoots = new ModArmor("ruby_boots", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        sapphireHelmet = new ModArmor("sapphire_helmet", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        sapphireChestplate = new ModArmor("sapphire_chestplate", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        sapphireLeggings = new ModArmor("sapphire_leggings", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        sapphireBoots = new ModArmor("sapphire_boots", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
     }
     // The armor will then be registered.
     public static void register() {
@@ -56,6 +74,14 @@ public class ArmorHandler {
         GameRegistry.register(titaniumChestplate);
         GameRegistry.register(titaniumLeggings);
         GameRegistry.register(titaniumBoots);
+        GameRegistry.register(rubyHelmet);
+        GameRegistry.register(rubyChestplate);
+        GameRegistry.register(rubyLeggings);
+        GameRegistry.register(rubyBoots);
+        GameRegistry.register(sapphireHelmet);
+        GameRegistry.register(sapphireChestplate);
+        GameRegistry.register(sapphireLeggings);
+        GameRegistry.register(sapphireBoots);
     }
     // The renderings need to be registered.
     public static void registerRenders() {
@@ -71,6 +97,14 @@ public class ArmorHandler {
         registerRender(titaniumChestplate);
         registerRender(titaniumLeggings);
         registerRender(titaniumBoots);
+        registerRender(rubyHelmet);
+        registerRender(rubyChestplate);
+        registerRender(rubyLeggings);
+        registerRender(rubyBoots);
+        registerRender(sapphireHelmet);
+        registerRender(sapphireChestplate);
+        registerRender(sapphireLeggings);
+        registerRender(sapphireBoots);
     }
     // Forge needs to know how to look for the textures and models.
     private static void registerRender(Item item) {
