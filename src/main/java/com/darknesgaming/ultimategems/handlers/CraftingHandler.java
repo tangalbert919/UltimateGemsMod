@@ -40,6 +40,18 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(ToolHandler.sapphirehoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(ToolHandler.sapphirespade, 1), " X ", " C ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
         GameRegistry.addRecipe(new ItemStack(WeaponHandler.sapphiresword, 1), " X ", " X ", " C ", 'X', ItemHandler.sapphire, 'C', Items.STICK);
+        // Topaz Tools
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.topazpickaxe, 1), "XXX", " C ", " C ", 'X', ItemHandler.topaz, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.topazaxe, 1), "XX ", "XC ", " C ", 'X', ItemHandler.topaz, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.topazhoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.topaz, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.topazspade, 1), " X ", " C ", " C ", 'X', ItemHandler.topaz, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(WeaponHandler.topazsword, 1), " X ", " X ", " C ", 'X', ItemHandler.topaz, 'C', Items.STICK);
+        // Peridot Tools
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.peridotpickaxe, 1), "XXX", " C ", " C ", 'X', ItemHandler.peridot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.peridotaxe, 1), "XX ", "XC ", " C ", 'X', ItemHandler.peridot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.peridothoe, 1), "XX ", " C ", " C ", 'X', ItemHandler.peridot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(ToolHandler.peridotspade, 1), " X ", " C ", " C ", 'X', ItemHandler.peridot, 'C', Items.STICK);
+        GameRegistry.addRecipe(new ItemStack(WeaponHandler.peridotsword, 1), " X ", " X ", " C ", 'X', ItemHandler.peridot, 'C', Items.STICK);
         // Armor
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldHelmet, 1), "XXX", "X X", "   ", 'X', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.emeraldChestplate, 1), "X X", "XXX", "XXX", 'X', Items.EMERALD);

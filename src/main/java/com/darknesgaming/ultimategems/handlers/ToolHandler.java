@@ -39,6 +39,16 @@ public class ToolHandler {
     static Item sapphireaxe;
     static Item sapphirespade;
     static Item sapphirehoe;
+    // Topaz Tools
+    static Item topazpickaxe;
+    static Item topazaxe;
+    static Item topazspade;
+    static Item topazhoe;
+    // Peridot Tools
+    static Item peridotpickaxe;
+    static Item peridotaxe;
+    static Item peridotspade;
+    static Item peridothoe;
     // Tools are initialized here.
     public static void init() {
         emeraldpickaxe = new ModPickaxe("emerald_pickaxe", MaterialHandler.EMERALD_TOOL, CreativeTabHandler.toolTab);
@@ -65,6 +75,16 @@ public class ToolHandler {
         sapphireaxe = new ModAxe("sapphire_axe", MaterialHandler.RS_AXE, CreativeTabHandler.toolTab);
         sapphirespade = new ModSpade("sapphire_spade", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
         sapphirehoe = new ModHoe("sapphire_hoe", MaterialHandler.RS_TOOL, CreativeTabHandler.toolTab);
+        // Topaz Tools
+        topazpickaxe = new ModPickaxe("topaz_pickaxe", MaterialHandler.PT_TOOL, CreativeTabHandler.toolTab);
+        topazaxe = new ModAxe("topaz_axe", MaterialHandler.PT_AXE, CreativeTabHandler.toolTab);
+        topazspade = new ModSpade("topaz_spade", MaterialHandler.PT_TOOL, CreativeTabHandler.toolTab);
+        topazhoe = new ModHoe("topaz_hoe", MaterialHandler.PT_TOOL, CreativeTabHandler.toolTab);
+        // Peridot Tools
+        peridotpickaxe = new ModPickaxe("peridot_pickaxe", MaterialHandler.PT_TOOL, CreativeTabHandler.toolTab);
+        peridotaxe = new ModAxe("peridot_axe", MaterialHandler.PT_AXE, CreativeTabHandler.toolTab);
+        peridotspade = new ModSpade("peridot_spade", MaterialHandler.PT_TOOL, CreativeTabHandler.toolTab);
+        peridothoe = new ModHoe("peridot_hoe", MaterialHandler.PT_TOOL, CreativeTabHandler.toolTab);
     }
     // These tools will then be registered.
     public static void register() {
@@ -89,7 +109,14 @@ public class ToolHandler {
         GameRegistry.register(sapphirehoe);
         GameRegistry.register(sapphirepickaxe);
         GameRegistry.register(sapphirespade);
-
+        GameRegistry.register(topazaxe);
+        GameRegistry.register(topazhoe);
+        GameRegistry.register(topazpickaxe);
+        GameRegistry.register(topazspade);
+        GameRegistry.register(peridotaxe);
+        GameRegistry.register(peridothoe);
+        GameRegistry.register(peridotpickaxe);
+        GameRegistry.register(peridotspade);
     }
     // The renderings need to be registered as well.
     public static void registerRenders() {
@@ -113,6 +140,14 @@ public class ToolHandler {
         registerRender(sapphirehoe);
         registerRender(sapphirepickaxe);
         registerRender(sapphirespade);
+        registerRender(topazaxe);
+        registerRender(topazhoe);
+        registerRender(topazpickaxe);
+        registerRender(topazspade);
+        registerRender(peridotaxe);
+        registerRender(peridothoe);
+        registerRender(peridotpickaxe);
+        registerRender(peridotspade);
     }
     // Forge needs to know how to search for the models and textures.
     private static void registerRender(Item item) {

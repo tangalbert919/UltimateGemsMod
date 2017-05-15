@@ -24,6 +24,8 @@ public class WeaponHandler {
         titaniumsword = new ModSword("titanium_sword", MaterialHandler.TITANIUM_WEAPON, CreativeTabHandler.weaponTab);
         rubysword = new ModSword("ruby_sword", MaterialHandler.RS_WEAPON, CreativeTabHandler.weaponTab);
         sapphiresword = new ModSword("sapphire_sword", MaterialHandler.RS_WEAPON, CreativeTabHandler.weaponTab);
+        topazsword = new ModSword("topaz_sword", MaterialHandler.PT_WEAPON, CreativeTabHandler.weaponTab);
+        peridotsword = new ModSword("peridot_sword", MaterialHandler.PT_WEAPON, CreativeTabHandler.weaponTab);
     }
     public static void register() {
         GameRegistry.register(emeraldsword);
@@ -31,6 +33,8 @@ public class WeaponHandler {
         GameRegistry.register(titaniumsword);
         GameRegistry.register(rubysword);
         GameRegistry.register(sapphiresword);
+        GameRegistry.register(topazsword);
+        GameRegistry.register(peridotsword);
     }
     public static void registerRenders() {
         registerRender(emeraldsword);
@@ -38,6 +42,8 @@ public class WeaponHandler {
         registerRender(titaniumsword);
         registerRender(rubysword);
         registerRender(sapphiresword);
+        registerRender(topazsword);
+        registerRender(peridotsword);
     }
     private static void registerRender(Item item) {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
