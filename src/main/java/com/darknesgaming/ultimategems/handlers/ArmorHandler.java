@@ -39,6 +39,11 @@ public class ArmorHandler {
     static Item sapphireChestplate;
     static Item sapphireLeggings;
     static Item sapphireBoots;
+    // Topaz armor
+    static Item topazHelmet;
+    static Item topazChestplate;
+    static Item topazLeggings;
+    static Item topazBoots;
     // The armor needs to be initialized first.
     public static void init() {
         emeraldHelmet = new ModArmor("emerald_helmet", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
@@ -61,6 +66,7 @@ public class ArmorHandler {
         sapphireChestplate = new SapphireArmor("sapphire_chestplate", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
         sapphireLeggings = new SapphireArmor("sapphire_leggings", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
         sapphireBoots = new SapphireArmor("sapphire_boots", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        topazHelmet = new ModArmor("topaz_helmet", MaterialHandler.TOPAZ, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
     }
     // The armor will then be registered.
     public static void register() {

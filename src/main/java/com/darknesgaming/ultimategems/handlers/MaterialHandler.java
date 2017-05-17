@@ -33,9 +33,11 @@ public class MaterialHandler {
     // Hacker
     static Item.ToolMaterial HACKER = EnumHelper.addToolMaterial("hacker", 3, 32767, 9999F, 9999F, 20);
     // Armor
-    static ItemArmor.ArmorMaterial EMERALD = EnumHelper.addArmorMaterial("emerald_armor", "ultimategems:emerald_armor", 700, new int[]{3,4,6,3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3F);
-    static ItemArmor.ArmorMaterial PALLADIUM = EnumHelper.addArmorMaterial("palladium_armor", "ultimategems:palladium_armor", 300, new int[]{2,3,4,2}, 6, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1F);
-    static ItemArmor.ArmorMaterial TITANIUM = EnumHelper.addArmorMaterial("titanium_armor", "ultimategems:titanium_armor", 1500, new int[]{4,5,7,4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5F);
-    static ItemArmor.ArmorMaterial RUBY = EnumHelper.addArmorMaterial("ruby_armor", "ultimategems:ruby_armor", 5835, new int[]{5,7,9,4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 7F);
-    static ItemArmor.ArmorMaterial SAPPHIRE = EnumHelper.addArmorMaterial("sapphire_armor", "ultimategems:sapphire_armor", 5835, new int[]{5,7,9,4}, 18,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 7F);
+    static ItemArmor.ArmorMaterial EMERALD = EnumHelper.addArmorMaterial("emerald_armor", "ultimategems:emerald_armor", 200, new int[]{3,4,6,3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3F);
+    static ItemArmor.ArmorMaterial PALLADIUM = EnumHelper.addArmorMaterial("palladium_armor", "ultimategems:palladium_armor", 80, new int[]{2,3,4,2}, 6, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1F);
+    static ItemArmor.ArmorMaterial TITANIUM = EnumHelper.addArmorMaterial("titanium_armor", "ultimategems:titanium_armor", 400, new int[]{4,5,7,4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4F);
+    static ItemArmor.ArmorMaterial RUBY = EnumHelper.addArmorMaterial("ruby_armor", "ultimategems:ruby_armor", 538, new int[]{5,7,9,4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6F);
+    static ItemArmor.ArmorMaterial SAPPHIRE = EnumHelper.addArmorMaterial("sapphire_armor", "ultimategems:sapphire_armor", 538, new int[]{5,7,9,4}, 18,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6F);
+    static ItemArmor.ArmorMaterial TOPAZ = EnumHelper.addArmorMaterial("topaz_armor", "ultimategems:topaz_armor", 386, new int[]{4,5,7,3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4F);
+    static ItemArmor.ArmorMaterial PERIDOT = EnumHelper.addArmorMaterial("peridot_armor", "ultimategems:peridot_armor", 386, new int[]{4,5,7,3}, 14, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4F);
 }

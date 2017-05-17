@@ -7,8 +7,8 @@
   "mcversion": "${mcversion}",
   "url": "https://tangalbert919.github.io",
   "updateUrl": "",
-  "authorList": ["DarknesGaming, ReDitto"],
-  "credits": "DarknesGaming (Coder), ReDitto (Graphics)",
+  "authorList": ["DarknesGaming"],
+  "credits": "ReDitto (Graphics)",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
