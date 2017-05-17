@@ -86,6 +86,23 @@ Use this to build the project.
 
 Make sure you're in the same directory as build.gradle before you type this in. Your product will most likely be called "modid.jar".
 
+## Issues
+
+If you find any errors with the code or problems while using the mod, you may [submit an issue ticket here.](https://www.github.com/tangalbert919/UltimateGemsMod/issues)
+
+Your issue ticket must have the following for me to figure out how to fix this problem:
+* A full crash report (if the mod crashed). If the mod did not crash, then you do not need to do this.
+* A screenshot for any weird glitches or rendering problems (so I know what I need to do).
+* If this is a new feature, please explain what this feature is and why I should add it.
+
+Your issue will be closed if:
+* It is a duplicate issue that was fixed long ago.
+* It does not fulfill any of the requirements listed above.
+
+## Pull requests
+
+If you have added in anything and wish to merge your work with mine, you can [create a pull request here.](https://www.github.com/tangalbert919/UltimateGemsMod/pulls)
+
 ## TODO
 * Make this work with Tinkers' Construct.
 * Add more metals and other shiny gems.

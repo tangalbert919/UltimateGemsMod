@@ -1,6 +1,8 @@
 package com.darknesgaming.ultimategems.handlers;
 
 import com.darknesgaming.ultimategems.items.ModArmor;
+import com.darknesgaming.ultimategems.items.RubyArmor;
+import com.darknesgaming.ultimategems.items.SapphireArmor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -51,14 +53,14 @@ public class ArmorHandler {
         titaniumChestplate = new ModArmor("titanium_chestplate", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
         titaniumLeggings = new ModArmor("titanium_leggings", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
         titaniumBoots = new ModArmor("titanium_boots", MaterialHandler.TITANIUM, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
-        rubyHelmet = new ModArmor("ruby_helmet", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
-        rubyChestplate = new ModArmor("ruby_chestplate", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
-        rubyLeggings = new ModArmor("ruby_leggings", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
-        rubyBoots = new ModArmor("ruby_boots", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
-        sapphireHelmet = new ModArmor("sapphire_helmet", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
-        sapphireChestplate = new ModArmor("sapphire_chestplate", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
-        sapphireLeggings = new ModArmor("sapphire_leggings", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
-        sapphireBoots = new ModArmor("sapphire_boots", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        rubyHelmet = new RubyArmor("ruby_helmet", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        rubyChestplate = new RubyArmor("ruby_chestplate", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        rubyLeggings = new RubyArmor("ruby_leggings", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        rubyBoots = new RubyArmor("ruby_boots", MaterialHandler.RUBY, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        sapphireHelmet = new SapphireArmor("sapphire_helmet", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        sapphireChestplate = new SapphireArmor("sapphire_chestplate", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        sapphireLeggings = new SapphireArmor("sapphire_leggings", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        sapphireBoots = new SapphireArmor("sapphire_boots", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
     }
     // The armor will then be registered.
     public static void register() {
