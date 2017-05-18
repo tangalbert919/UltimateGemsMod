@@ -44,6 +44,11 @@ public class ArmorHandler {
     static Item topazChestplate;
     static Item topazLeggings;
     static Item topazBoots;
+    // Peridot armor
+    static Item peridotHelmet;
+    static Item peridotChestplate;
+    static Item peridotLeggings;
+    static Item peridotBoots;
     // The armor needs to be initialized first.
     public static void init() {
         emeraldHelmet = new ModArmor("emerald_helmet", MaterialHandler.EMERALD, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
@@ -67,6 +72,13 @@ public class ArmorHandler {
         sapphireLeggings = new SapphireArmor("sapphire_leggings", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
         sapphireBoots = new SapphireArmor("sapphire_boots", MaterialHandler.SAPPHIRE, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
         topazHelmet = new ModArmor("topaz_helmet", MaterialHandler.TOPAZ, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        topazChestplate = new ModArmor("topaz_chestplate", MaterialHandler.TOPAZ, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        topazLeggings = new ModArmor("topaz_leggings", MaterialHandler.TOPAZ, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        topazBoots = new ModArmor("topaz_boots", MaterialHandler.TOPAZ, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
+        peridotHelmet = new ModArmor("peridot_helmet", MaterialHandler.PERIDOT, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.HEAD);
+        peridotChestplate = new ModArmor("peridot_chestplate", MaterialHandler.PERIDOT, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.CHEST);
+        peridotLeggings = new ModArmor("peridot_leggings", MaterialHandler.PERIDOT, CreativeTabHandler.weaponTab, 2, EntityEquipmentSlot.LEGS);
+        peridotBoots = new ModArmor("peridot_boots", MaterialHandler.PERIDOT, CreativeTabHandler.weaponTab, 1, EntityEquipmentSlot.FEET);
     }
     // The armor will then be registered.
     public static void register() {
@@ -90,6 +102,14 @@ public class ArmorHandler {
         GameRegistry.register(sapphireChestplate);
         GameRegistry.register(sapphireLeggings);
         GameRegistry.register(sapphireBoots);
+        GameRegistry.register(topazHelmet);
+        GameRegistry.register(topazChestplate);
+        GameRegistry.register(topazLeggings);
+        GameRegistry.register(topazBoots);
+        GameRegistry.register(peridotHelmet);
+        GameRegistry.register(peridotChestplate);
+        GameRegistry.register(peridotLeggings);
+        GameRegistry.register(peridotBoots);
     }
     // The renderings need to be registered.
     public static void registerRenders() {
@@ -113,6 +133,14 @@ public class ArmorHandler {
         registerRender(sapphireChestplate);
         registerRender(sapphireLeggings);
         registerRender(sapphireBoots);
+        registerRender(topazHelmet);
+        registerRender(topazChestplate);
+        registerRender(topazLeggings);
+        registerRender(topazBoots);
+        registerRender(peridotHelmet);
+        registerRender(peridotChestplate);
+        registerRender(peridotLeggings);
+        registerRender(peridotBoots);
     }
     // Forge needs to know how to look for the textures and models.
     private static void registerRender(Item item) {

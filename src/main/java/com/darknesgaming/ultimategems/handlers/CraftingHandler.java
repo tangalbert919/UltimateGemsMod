@@ -73,6 +73,14 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.sapphireChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.sapphire);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.sapphireLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.sapphire);
         GameRegistry.addRecipe(new ItemStack(ArmorHandler.sapphireBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.sapphire);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.topazHelmet, 1), "XXX", "X X", "   ", 'X', ItemHandler.topaz);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.topazChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.topaz);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.topazLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.topaz);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.topazBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.topaz);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.peridotHelmet, 1), "XXX", "X X", "   ", 'X', ItemHandler.peridot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.peridotChestplate, 1), "X X", "XXX", "XXX", 'X', ItemHandler.peridot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.peridotLeggings, 1), "XXX", "X X", "X X", 'X', ItemHandler.peridot);
+        GameRegistry.addRecipe(new ItemStack(ArmorHandler.peridotBoots, 1), "   ", "X X", "X X", 'X', ItemHandler.peridot);
         // Overworld blocks
         GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.palladiumingot, 9), BlockHandler.ipalladiumblock);
         GameRegistry.addRecipe(new ItemStack(BlockHandler.ipalladiumblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.palladiumingot);
