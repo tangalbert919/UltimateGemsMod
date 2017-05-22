@@ -1,5 +1,6 @@
 package com.darknesgaming.ultimategems;
 
+import api.slimeknights.tconstruct.IMCHandler;
 import com.darknesgaming.ultimategems.handlers.*;
 import com.darknesgaming.ultimategems.world.WorldGenOre;
 import com.darknesgaming.ultimategems.world.WorldHacker;
@@ -26,6 +27,9 @@ public class CommonProxy {
         ArmorHandler.register();
         WeaponHandler.init();
         WeaponHandler.register();
+        IMCHandler.init();
+        IMCHandler.register();
+        IMCHandler.addBlocks();
         //HackerHandler.init();
         //HackerHandler.register();
     }
