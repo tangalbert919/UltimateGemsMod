@@ -23,9 +23,12 @@ public class IMCHandler {
         FluidRegistry.addBucketForFluid(titanium);
     }
     public static void addBlocks() {
-        Block palladium_block = new BlockFluidClassic(palladium, Material.LAVA);
+        // TODO: Figure out how to register these blocks.
+        Block palladium_fluid = new BlockFluidClassic(palladium, Material.LAVA);
+        Block titanium_fluid = new BlockFluidClassic(titanium, Material.LAVA);
         NBTTagCompound tag = new NBTTagCompound();
         tag.setString("fluid", palladium.getName());
+        tag.setString("fluid", titanium.getName());
         tag.setString("ore", "Foo");
         tag.setBoolean("toolForge", true);
         FMLInterModComms.sendMessage("tconstruct", "integrateSmeltery", tag);
