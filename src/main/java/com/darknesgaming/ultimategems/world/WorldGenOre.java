@@ -41,8 +41,11 @@ public class WorldGenOre implements IWorldGenerator {
         addOreSpawn(BlockHandler.titaniumore.getDefaultState(), world, rand, chunkX, chunkZ, 14, 14, 12, 25, 5, 40, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(BlockHandler.rubyore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 8, 5, 30, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(BlockHandler.sapphireore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 8, 5, 30, BlockMatcher.forBlock(Blocks.STONE));
-        addOreSpawn(BlockHandler.topazore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 12, 5, 50, BlockMatcher.forBlock(Blocks.STONE));
-        addOreSpawn(BlockHandler.peridotore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 8, 12, 5, 50, BlockMatcher.forBlock(Blocks.STONE));
+        addOreSpawn(BlockHandler.topazore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 18, 5, 50, BlockMatcher.forBlock(Blocks.STONE));
+        addOreSpawn(BlockHandler.peridotore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 18, 5, 50, BlockMatcher.forBlock(Blocks.STONE));
+        addOreSpawn(BlockHandler.amethystore.getDefaultState(), world, rand, chunkX, chunkZ, 14, 14, 8, 12, 5, 30, BlockMatcher.forBlock(Blocks.STONE));
+        addOreSpawn(BlockHandler.berylore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 18, 5, 50, BlockMatcher.forBlock(Blocks.STONE));
+        addOreSpawn(BlockHandler.citrineore.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 18, 5, 50, BlockMatcher.forBlock(Blocks.STONE));
     }
     private void genNether(World world, Random rand, int chunkX, int chunkZ) {
         addOreSpawn(BlockHandler.netheriron.getDefaultState(), world, rand, chunkX, chunkZ, 16, 16, 12, 30, 10, 245, BlockMatcher.forBlock(Blocks.NETHERRACK));

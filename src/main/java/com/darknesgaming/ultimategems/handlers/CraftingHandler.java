@@ -94,5 +94,11 @@ public class CraftingHandler {
         GameRegistry.addRecipe(new ItemStack(BlockHandler.itopazblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.topaz);
         GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.peridot, 9), BlockHandler.iperidotblock);
         GameRegistry.addRecipe(new ItemStack(BlockHandler.iperidotblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.peridot);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.amethyst, 9), BlockHandler.iamethystblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.iamethystblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.amethyst);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.beryl, 9), BlockHandler.iberylblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.iberylblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.beryl);
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemHandler.citrine, 9), BlockHandler.icitrineblock);
+        GameRegistry.addRecipe(new ItemStack(BlockHandler.icitrineblock, 1), "XXX", "XXX", "XXX", 'X', ItemHandler.citrine);
     }
 }

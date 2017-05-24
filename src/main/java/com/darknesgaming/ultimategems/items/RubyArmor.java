@@ -17,6 +17,6 @@ public class RubyArmor extends ModArmor {
         super(name, material, tab, renderIndexIn, equipmentSlotIn);
     }
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 999999, 2));
+        player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 10, 2));
     }
 }

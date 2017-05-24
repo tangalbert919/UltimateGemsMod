@@ -23,6 +23,9 @@ public class ItemHandler {
     public static Item sapphire;
     public static Item topaz;
     public static Item peridot;
+    public static Item amethyst;
+    public static Item beryl;
+    public static Item citrine;
 
     // Items are initialized here.
     public static void init() {
@@ -33,6 +36,9 @@ public class ItemHandler {
         sapphire = new ModItem("sapphire", CreativeTabHandler.itemTab);
         topaz = new ModItem("topaz", CreativeTabHandler.itemTab);
         peridot = new ModItem("peridot", CreativeTabHandler.itemTab);
+        amethyst = new ModItem("amethyst", CreativeTabHandler.itemTab);
+        beryl = new ModItem("beryl", CreativeTabHandler.itemTab);
+        citrine = new ModItem("citrine", CreativeTabHandler.itemTab);
     }
     // These items will then be registered.
     public static void register() {
@@ -42,16 +48,21 @@ public class ItemHandler {
         GameRegistry.register(sapphire);
         GameRegistry.register(topaz);
         GameRegistry.register(peridot);
+        GameRegistry.register(amethyst);
+        GameRegistry.register(beryl);
+        GameRegistry.register(citrine);
     }
     // The rendering is registered so Forge knows where to look for the textures and models.
     public static void registerRenders() {
         registerRender(palladiumingot);
         registerRender(titaniumingot);
-        // TODO: Make textures for these gems.
         registerRender(ruby);
         registerRender(sapphire);
         registerRender(topaz);
         registerRender(peridot);
+        registerRender(amethyst);
+        registerRender(beryl);
+        registerRender(citrine);
     }
     // This method tells Forge how to look for the textures and models.
     private static void registerRender(Item item) {

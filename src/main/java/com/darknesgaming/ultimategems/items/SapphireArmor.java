@@ -17,6 +17,6 @@ public class SapphireArmor extends ModArmor {
         super(name, material, tab, renderIndexIn, equipmentSlotIn);
     }
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 999999, 2));
+        player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 10, 2));
     }
 }

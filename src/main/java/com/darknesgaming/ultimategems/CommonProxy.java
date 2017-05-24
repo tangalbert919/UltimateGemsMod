@@ -27,9 +27,9 @@ public class CommonProxy {
         ArmorHandler.register();
         WeaponHandler.init();
         WeaponHandler.register();
-        IMCHandler.init();
-        IMCHandler.register();
-        IMCHandler.addBlocks();
+        //IMCHandler.init();
+        //IMCHandler.register();
+        //IMCHandler.addBlocks();
         //HackerHandler.init();
         //HackerHandler.register();
     }
