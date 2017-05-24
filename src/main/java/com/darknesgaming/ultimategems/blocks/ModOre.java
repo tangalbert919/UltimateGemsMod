@@ -18,6 +18,7 @@ public class ModOre extends ModBlock {
         super(mat, name, tabs, hardness, resistance, harvest, tool);
     }
     // Add the ores that use this class to the return statement in this method.
+    @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return this == BlockHandler.rubyore ? ItemHandler.ruby : (this == BlockHandler.sapphireore ? ItemHandler.sapphire : (this == BlockHandler.topazore ? ItemHandler.topaz : (this == BlockHandler.peridotore ? ItemHandler.peridot : (this == BlockHandler.amethystore ? ItemHandler.amethyst : (this == BlockHandler.berylore ? ItemHandler.beryl : (this == BlockHandler.citrineore ? ItemHandler.citrine : Item.getItemFromBlock(this)))))));
     }
@@ -25,7 +26,7 @@ public class ModOre extends ModBlock {
     @Override
     public int quantityDroppedWithBonus(int fortune, Random random)
     {
-        if (fortune > 0 && Item.getItemFromBlock(this) != this.getItemDropped((IBlockState)this.getBlockState().getValidStates().iterator().next(), random, fortune))
+        if (fortune > 0 && Item.getItemFromBlock(this) != this.getItemDropped(this.getBlockState().getValidStates().iterator().next(), random, fortune))
         {
             int i = random.nextInt(fortune + 2) - 1;
 
